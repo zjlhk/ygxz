@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>YouTube Thumbnail Downloader</title>
+  <meta name="description" content="Download YouTube thumbnails quickly. Support multi-language UI and SEO articles." />
+  <!-- Basic hreflang links (helps search engines) -->
+  <link rel="alternate" hreflang="en" href="/" />
+  <link rel="alternate" hreflang="zh" href="/?hl=zh" />
+  <link rel="alternate" hreflang="es" href="/?hl=es" />
+  <link rel="alternate" hreflang="ar" href="/?hl=ar" />
+  <link rel="alternate" hreflang="hi" href="/?hl=hi" />
+  <link rel="alternate" hreflang="pt" href="/?hl=pt" />
+  <link rel="alternate" hreflang="ru" href="/?hl=ru" />
+  <link rel="alternate" hreflang="ja" href="/?hl=ja" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <h1 id="site-title">YouTube Thumbnail Downloader</h1>
+      <div class="controls">
+        <select id="lang-select" aria-label="Select language"></select>
+      </div>
+    </div>
+  </header>
+
+  <main class="container main">
+    <section class="tool-card">
+      <div class="input-row">
+        <input id="video-input" type="text" placeholder="Paste YouTube video URL or ID" />
+        <button id="fetch-btn">Get Thumbnails</button>
+        <button id="clear-btn" class="secondary">Clear</button>
+      </div>
+      <p id="status" class="muted"></p>
+
+      <div id="thumb-grid" class="thumb-grid"></div>
+    </section>
+
+    <section id="seo-article" class="seo-article"></section>
+  </main>
+
+  <footer class="footer container">
+    <p class="muted">© <span id="year"></span> YouTube Thumbnail Downloader — Not affiliated with YouTube or Google.</p>
+  </footer>
+
+  <script src="i18n.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
